@@ -38,7 +38,9 @@ public class FragmentCreator {
             default:
                 break;
         }
-        sCache.put(index,baseFragment);
+        if (baseFragment != null) {
+            sCache.put(index, baseFragment);
+        }
         return baseFragment;
     }
 }

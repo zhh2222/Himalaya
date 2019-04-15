@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@drawable/shape_album_item_bg">
+
+    <com.example.brett_zhu.himalaya.views.RoundRectImageView
+        android:id="@+id/album_cover_iv"
+        android:layout_width="68dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/album_cover_iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/album_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="拿破仑.希尔《成功学全书》"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/album_description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="为你开启成功之路"
+            android:textColor="#ff848484"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/play_info_icon" />
+
+                <TextView
+                    android:id="@+id/album_play_count"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="123.5万"
+                    android:textColor="#ff848484"
+                    android:textSize="7sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_sound" />
+
+                <TextView
+                    android:id="@+id/album_content_size"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="23集"
+                    android:textColor="#ff848484"
+                    android:textSize="7sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
